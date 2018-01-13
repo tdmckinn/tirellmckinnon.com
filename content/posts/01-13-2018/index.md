@@ -82,7 +82,9 @@ At this point we have a tsconfig file indicating that this project is a typescri
 ### Modifying the webpack
 
 The vue template that was used will generate a project directory structure. See image below.
+
 ![logo](https://res.cloudinary.com/drjn3dk05/image/upload/v1515517810/Screen_Shot_2018-01-09_at_12.09.46_PM_fwpihh.png)
+
 As you can see there are multiple webpack config files and babel is still in place. The next thing we want to do is add a rule to webpack.base.config
 
 ```javascript
@@ -140,6 +142,7 @@ To summarize to this point we have generated a hello world project (fresh) with 
 Throwing in one selling point, using VS Code alongside typescript is that it’s really useful for catching simple mistakes and getting a good idea of what the API's of your chosen framework or lib are without leaving the editor. Anything you need more in depth or clarification you can always check the docs.
 
 In the image pictured below you can see the typescript compiler is yelling about assigning a string to a boolean. Very simple warnings and notifications provide for a better developer experience.
+
 ![](https://res.cloudinary.com/drjn3dk05/image/upload/v1515427410/fxlynlijfe7jrn2l1nou.png)
 
 If the application starts up fine for you skip - # Possible common errors
@@ -208,7 +211,7 @@ That being said you can definitely use the object based api as long as you under
 * Create new component `BaseWorldDecorated.ts` in components directory
 * You can create components outside the SFC .vue files and create components with logic / helper functions to extend your UI component
 * Create EssentialLinks.vue
-  The source code for what's needed in each one of the new files is below. The HelloWord.vue file will be changed to use the class based syntax and extending from `BaseWorldDecorated.ts`. It also will use the newly created EssentialLinks.vue. If you need to see exactly what HelloWorld looks like with those changes check out the code here [HelloWorld.vue]()
+  The source code for what's needed in each one of the new files is below. The HelloWord.vue file will be changed to use the class based syntax and extending from `BaseWorldDecorated.ts`. It also will use the newly created EssentialLinks.vue. If you need to see exactly what HelloWorld looks like with those changes check out the code here [HelloWorld.vue](https://github.com/tdmckinn/vue-typescript-webapp/blob/master/src/components/HelloWorld.vue)
 
 ```javascript
 import Vue from 'vue'
@@ -276,7 +279,7 @@ export default class HelloWorld extends BaseWorldDecorated {
 
 #### Optional Step - removing unneeded resources
 
-* Stop the app
+First Stop the app and then decide if you want to remove dependencies step by step or all at once.
 
 Step by step
 
@@ -301,4 +304,4 @@ Here are some recommendations for tooling in the Vue development workflow if you
 * Prettier / VS Code
 * Tslint
 
-The src code for this project is located [Vue-Typescript-WebApp](). My hope is the provided information will help you get started, as well as help those who have already started Vue projects and want to integrate typescript. Thanks for taking the time to read!
+The src code for this project is located [Vue-Typescript-WebApp](https://github.com/tdmckinn/vue-typescript-webapp). My hope is the provided information will help you get started, as well as help those who have already started Vue projects and want to integrate typescript. Thanks for taking the time to read!
