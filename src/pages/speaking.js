@@ -44,7 +44,7 @@ class Speaking extends Component {
             </div>
             <div className="my-talks-collage">
               <img
-                src="http://res.cloudinary.com/drjn3dk05/image/upload/v1515791119/37838715525_fbdf60fcba_o-COLLAGE_dvxtug.jpg"
+                src="https://res.cloudinary.com/drjn3dk05/image/upload/v1515791119/37838715525_fbdf60fcba_o-COLLAGE_dvxtug.jpg"
                 alt="Tirell Mckinnon's Speaker Collage"
               />
             </div>

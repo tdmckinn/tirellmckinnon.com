@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://github.com/tirellmckinn.com/sitemap.xml
+sitemap: https://tirellmckinnon.com/sitemap.xml
