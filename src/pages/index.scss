@@ -27,6 +27,73 @@
 
   &-information {
     flex: 2;
+
+    // credit: https://codepen.io/chriscoyier/pen/wauoL list style
+    .comment {
+      overflow: hidden;
+      padding: 0 0 1em;
+      padding-left: 25px;
+      border-bottom: 1px solid #ddd;
+      margin: 0 0 1em;
+      *zoom: 1;
+
+      &-body {
+        overflow: hidden;
+      }
+
+      .text {
+        padding: 10px;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        background: #fff;
+
+        p:last-child {
+          margin: 0;
+        }
+      }
+
+      .attribution {
+        margin: 0.5em 0 0;
+        font-size: 14px;
+        color: #666;
+      }
+
+      &:before {
+        width: 9px;
+        height: 9px;
+        border: 3px solid #fff;
+        border-radius: 100px;
+        margin: 16px 0 0 -6px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+          inset 0 1px 1px rgba(0, 0, 0, 0.1);
+        background: #ccc;
+      }
+
+      &:hover:before {
+        background: $brand-color;
+      }
+    }
+
+    .comments,
+    .comment {
+      position: relative;
+    }
+
+    .comments:before,
+    .comment:before,
+    .comment .text:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+    }
+
+    .comments:before {
+      width: 3px;
+      top: -5px;
+      bottom: -20px;
+      background: rgba(0, 0, 0, 0.1);
+    }
   }
 
   &-collage {
@@ -38,70 +105,4 @@
       max-width: 100%;
     }
   }
-}
-
-// credit: https://codepen.io/chriscoyier/pen/wauoL list style
-.comment {
-  overflow: hidden;
-  padding: 0 0 1em;
-  padding-left: 25px;
-  border-bottom: 1px solid #ddd;
-  margin: 0 0 1em;
-  *zoom: 1;
-
-  &-body {
-    overflow: hidden;
-  }
-
-  .text {
-    padding: 10px;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    background: #fff;
-
-    p:last-child {
-      margin: 0;
-    }
-  }
-
-  .attribution {
-    margin: 0.5em 0 0;
-    font-size: 14px;
-    color: #666;
-  }
-
-  &:before {
-    width: 9px;
-    height: 9px;
-    border: 3px solid #fff;
-    border-radius: 100px;
-    margin: 16px 0 0 -6px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
-    background: #ccc;
-  }
-
-  &:hover:before {
-    background: $brand-color;
-  }
-}
-
-.comments,
-.comment {
-  position: relative;
-}
-
-.comments:before,
-.comment:before,
-.comment .text:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 5px;
-}
-
-.comments:before {
-  width: 3px;
-  top: -5px;
-  bottom: -20px;
-  background: rgba(0, 0, 0, 0.1);
 }
