@@ -1,0 +1,79 @@
+{
+  "engagements": [
+    {
+      "year": 2016,
+      "talks": [
+        {
+          "conference": "The React Ecosystem",
+          "location": "Raleigh / Durham NC - Meetup",
+          "slides": "https://reactecosystemmeetup.herokuapp.com/",
+          "date": "2016-04-18"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "talks": [
+        {
+          "conference": "JazzCon",
+          "location": "New Orleans, LO",
+          "slides": "",
+          "date": "03/22/2017"
+        },
+        {
+          "conference": "Beer City Code",
+          "location": "Michigan",
+          "slides": "",
+          "date": "06/05/2017"
+        },
+        {
+          "conference": "All things Open",
+          "location": "Raleigh, NC",
+          "slides": "",
+          "date": "10/05/2017"
+        },
+        {
+          "conference": "FullStack Toronto",
+          "location": "Toronto, Canada",
+          "slides": "",
+          "date": "10/22/2017"
+        },
+        {
+          "conference": "Open Source South Carolina",
+          "location": "Charleston, SC",
+          "slides": "",
+          "date": "12/10/2017"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "talks": [
+        {
+          "conference": "CharlotteJS Meetup",
+          "location": "Charlotte, NC",
+          "slides": "",
+          "date": ""
+        },
+        {
+          "conference": "Open Source 101",
+          "location": "Raleigh, NC",
+          "slides": "02/17/2018",
+          "date": ""
+        },
+        {
+          "conference": "JazzCon",
+          "location": "New Orleans, LO",
+          "slides": "",
+          "date": "03/22/2018"
+        },
+        {
+          "conference": "Open Source 101",
+          "location": "Columbia, SC",
+          "slides": "",
+          "date": "04/17/2018"
+        }
+      ]
+    }
+  ]
+}

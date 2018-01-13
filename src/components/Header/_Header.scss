@@ -1,0 +1,12 @@
+.site-header {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  min-height: 350px;
+  border-top: 5px solid $grey-color-dark;  
+  background: #2a373d url(../assets/img/282H2.jpg) no-repeat center center;  
+  background-position: center;
+  background-size: cover;
+}
