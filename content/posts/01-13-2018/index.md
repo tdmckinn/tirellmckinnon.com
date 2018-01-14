@@ -10,15 +10,14 @@ tags:
 I've had the pleasure of using Vue since early last year, and have also been a Typescript fan. In a previous project I used React with Typescript, and it was a seamless experience. With Vue I had somewhat stayed clear of combining them both, but as of Vue version 2.5 there has been some improvements with support. See [Upcoming TypeScript Changes in Vue 2.5
 ](https://medium.com/the-vue-point/upcoming-typescript-changes-in-vue-2-5-e9bd7e2ecf08) by Evan You.
 
-In this post I will assume you already have some experience with Vue and Typescript, so you've most likely bought into the why you should/could use the framework and tools together. If you would like to know why you should use Vue or Typescript, drop me a note in the comments for a follow up. My goal in this post is to guide you step by step into how to set up a project from scratch, using the vue-cli to end state with Typescript. Also, I’ll cover some issues you might encounter. Some blog posts only show the best case scenario with everything working correctly out the gate, while my experience at times, has been the opposite.
-I'd like to add there are various starter typescript and Vue projects out there. Hopefully this will help you if this initially wasn’t your direction or if you are generally interested in the setup.
+In this post I will assume you already have some experience with Vue and Typescript, so you've most likely bought into the why you should/could use the framework and tools together. If you would like to know why you should use Vue or Typescript, drop me a note in the comments for a follow up. My goal in this post is to guide you step by step on how to set up a project from scratch, using the vue-cli to end state a working Vue app integrated with Typescript. Also, I’ll cover some issues you might encounter. Some blog posts only show the best case scenario with everything working correctly out the gate, while my experience at times, has been the opposite.
+I'd like to add there are various starter typescript and Vue projects out there. Hopefully this guide will help you if this initially wasn’t your direction or if you are generally interested in the setup.
 
 ## Getting started now
 
-In order to get started you need the [vue-cli](https://github.com/vuejs/vue-cli), the use case is too scaffold Vue projects easily. Using Vue templates is a way to specify the type of vue project that you want, and in this case, we are going to use the standard webpack template.
-One of the wonderful things about open source is that you can always check the latest branch of a prospective library you want to use.
+In order to get started you need the [vue-cli](https://github.com/vuejs/vue-cli), the use case is to scaffold Vue projects easily. Using Vue templates is a way to specify the type of vue project that you want, and in this case, we are going to use the standard webpack template. The standard webpack template will scaffold a very simple Hello World app with webpack as the build system.
 
-In the future release of the vue-cli issues and setup steps mentioned in the article may just go away. The Vue team is currently working on the next version and if you want to follow the discussion check that out here [vue-cli 3](https://github.com/vuejs/vue-cli/issues/589).
+One of the wonderful things about open source is that you can always check the latest branch of a prospective library you want to use. In the future release of the vue-cli issues and setup steps mentioned in the article may just go away. The Vue team is currently working on the next version and if you want to follow the discussion check that out here [vue-cli 3](https://github.com/vuejs/vue-cli/issues/589).
 
 ### First Step Project Scaffolding
 
@@ -32,7 +31,7 @@ In the future release of the vue-cli issues and setup steps mentioned in the art
 `vue init <template> <project-name>`
 `vue init webpack vue-typescript-webapp`
 
-During the kickoff of the previous command in your terminal, powershell, or windows-ubuntu shell you should see something like the following below, and you will then enter your information.
+During the kickoff of the previous command in your terminal, powershell, or windows-ubuntu shell you should see something like the following below, and there you will then enter your information.
 ![logo](https://res.cloudinary.com/drjn3dk05/image/upload/v1514939273/Screen_Shot_2018-01-02_at_7.18.27_PM_mxhwdl.png)
 
 ### Second Step Starting the Project
@@ -44,14 +43,13 @@ Once your finished answering the series of questions and the project is generate
  npm run dev
 ```
 
-At this point you have a Vue hello world application with a fairly robust build setup using webpack / babel. In my opinion, adding the typescript dependencies before you remove all the babel dependencies has resulted in a quicker setup for me. **Note**: most likely you don't need both babel and typescript typescript like babel can compile down to ES5 or target ES6. This is completely up to you and your needs for your project.
-Before continuing to the next step you can go ahead and stop the current application from running in the terminal
-`Clt + C`
+At this point you have a Vue Hello World application with a fairly robust build setup using webpack / babel. In my opinion, adding the typescript dependencies before you remove all the babel dependencies has resulted in a quicker setup for me. **Note**: most likely you don't need both babel and typescript typescript like babel can compile down to ES5 or target ES6. This is completely up to you and your needs for your project.
+
+Before continuing to the next step you can go ahead and stop the current application from running in the terminal `Clt + C`.
 
 ### Third Step Integrating Typescript
 
-Create a tsconfig.json file to get started in the root directory with these configurations.
-Base recommendations for a [vue tsconfig](https://vuejs.org/v2/guide/typescript.html). The configurations I've needed to get things working are located below.
+Create a tsconfig.json file to get started in the root directory with these configurations. Base recommendations for a [vue tsconfig](https://vuejs.org/v2/guide/typescript.html). The configurations I've needed to get things working are located below.
 
 ```javascript
 {
@@ -139,7 +137,7 @@ To summarize to this point we have generated a hello world project (fresh) with 
 
 `npm run dev`
 
-Throwing in one selling point, using VS Code alongside typescript is that it’s really useful for catching simple mistakes and getting a good idea of what the API's of your chosen framework or lib are without leaving the editor. Anything you need more in depth or clarification you can always check the docs.
+Throwing in one selling point, using VS Code alongside typescript is that it’s really useful for catching simple mistakes and getting a good idea of what the API's of your chosen framework or lib are without leaving the editor. Anything you need more in depth or clarification about you can always check the docs.
 
 In the image pictured below you can see the typescript compiler is yelling about assigning a string to a boolean. Very simple warnings and notifications provide for a better developer experience.
 
@@ -172,8 +170,8 @@ error  in ./src/main.ts
 
 ## Targeting typescript in a Single File Component (SFC)
 
-Here we will target typescript in our .vue files looking at the example below. I'm specifically using HelloWorld.vue
-Adding a `lang` target with the value of "ts" allows us to start using typescript as if it were its own .ts file. You can play around with typescript features now directly in this file [Typescript Docs](https://www.typescriptlang.org/docs/handbook/basic-types.html).
+I really enjoy using the SFC way of building components Vue happens to be really flexible in the way that you can build them, its really all your preference. Here we will target typescript in our .vue files looking at the example below. I'm specifically using HelloWorld.vue
+Adding a `lang` target with the value of "ts" to the `script` tag allows us to start using typescript as if it were its own .ts file. You can play around with typescript features now directly in this file [Typescript Docs](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
 ```javascript
 <script lang="ts">
@@ -199,7 +197,7 @@ export default Vue.extend({
 })
 ```
 
-You'll probably notice, after a while, if you’re trying to tag on typescript annotations to the exported default object the context of this won’t be working as you might expect. Using the class based syntax is really the solution. The quote below is from the article mentioned about Typescript support in 2.5. Using Vue.extend does provide some type inference but the latter feels somewhat better.
+You'll probably notice, after a while, if you’re trying to tag on typescript annotations to the exported default object the context of `this` won’t be working as you might expect. Using the class based syntax is really the solution. The quote below is from the article mentioned about Typescript support in 2.5. Using Vue.extend does provide some type inference but the latter feels somewhat better.
 
 > However, the current integration is somewhat lacking when using the out-of-the-box Vue API. For example, TypeScript cannot easily infer the type of this inside the default object-based API that Vue uses. To make our Vue code play nicely with TypeScript, we have to use the vue-class-component decorator, which allows us to author Vue components using a class-based syntax.
 
@@ -211,7 +209,8 @@ That being said you can definitely use the object based api as long as you under
 * Create new component `BaseWorldDecorated.ts` in components directory
 * You can create components outside the SFC .vue files and create components with logic / helper functions to extend your UI component
 * Create EssentialLinks.vue
-  The source code for what's needed in each one of the new files is below. The HelloWord.vue file will be changed to use the class based syntax and extending from `BaseWorldDecorated.ts`. It also will use the newly created EssentialLinks.vue. If you need to see exactly what HelloWorld looks like with those changes check out the code here [HelloWorld.vue](https://github.com/tdmckinn/vue-typescript-webapp/blob/master/src/components/HelloWorld.vue)
+
+The source code for what's needed in each one of the new files is below. The HelloWord.vue file will be changed to use the class based syntax and extending from `BaseWorldDecorated.ts`. It also will use the newly created EssentialLinks.vue. If you need to see exactly what HelloWorld looks like with those changes check out the code here [HelloWorld.vue](https://github.com/tdmckinn/vue-typescript-webapp/blob/master/src/components/HelloWorld.vue)
 
 ```javascript
 import Vue from 'vue'
@@ -261,8 +260,7 @@ export default class EssentialLinks extends Vue {
 </script>
 ```
 
-With the latest changes, we have shown typescript works throughout the project in standalone files as a lang target and vue class components. If you run into any issues you can always refer to the end solution.
-An issue I ran into my self was while it’s possible to extend a base Vue component like `BaseWorldDecorated.ts`to HellowWorld.vue, the logger method that is inherited from BaseWorldDecorated works in the HelloWorld’s template, but fails if used within the actual vue class component.
+With the latest changes, we have shown typescript works throughout the project in standalone files as a `lang target` and `vue class components`. If you run into any issues you can always refer to the end solution. An issue I ran into my self was while it’s possible to extend a base Vue component like `BaseWorldDecorated.ts` to HellowWorld.vue, the logger method that is inherited from BaseWorldDecorated works in the HelloWorld’s template, but fails if used within the actual vue class component.
 
 ```javascript
 @Component({
@@ -279,7 +277,7 @@ export default class HelloWorld extends BaseWorldDecorated {
 
 #### Optional Step - removing unneeded resources
 
-First Stop the app and then decide if you want to remove dependencies step by step or all at once.
+First stop the app and then decide if you want to remove dependencies step by step or all at once.
 
 Step by step
 
