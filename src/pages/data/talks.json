@@ -4,7 +4,7 @@
       "year": 2016,
       "talks": [
         {
-          "conference": "The React Ecosystem",
+          "conference": "TriangleJS - The React Ecosystem",
           "location": "Raleigh / Durham NC - Meetup",
           "slides": "https://reactecosystemmeetup.herokuapp.com/",
           "date": "2016-04-18"
@@ -15,31 +15,31 @@
       "year": 2017,
       "talks": [
         {
-          "conference": "JazzCon",
+          "conference": "JazzCon - Bundling Modern Web Apps",
           "location": "New Orleans, LO",
           "slides": "",
           "date": "03/22/2017"
         },
         {
-          "conference": "Beer City Code",
-          "location": "Michigan",
+          "conference": "Beer City Code - Bundling Modern Web Apps",
+          "location": "Grand Rapids, MI",
           "slides": "",
           "date": "06/05/2017"
         },
         {
-          "conference": "All things Open",
-          "location": "Raleigh, NC",
-          "slides": "",
-          "date": "10/05/2017"
-        },
-        {
-          "conference": "FullStack Toronto",
+          "conference": "FullStack Toronto - VueJS",
           "location": "Toronto, Canada",
           "slides": "",
           "date": "10/22/2017"
         },
         {
-          "conference": "Open Source South Carolina",
+          "conference": "All things Open - VueJS",
+          "location": "Raleigh, NC",
+          "slides": "",
+          "date": "10/23/2017"
+        },
+        {
+          "conference": "Open Source South Carolina - VueJS",
           "location": "Charleston, SC",
           "slides": "",
           "date": "12/10/2017"
@@ -50,25 +50,25 @@
       "year": 2018,
       "talks": [
         {
-          "conference": "CharlotteJS Meetup",
+          "conference": "CharlotteJS Meetup - VueJS",
           "location": "Charlotte, NC",
           "slides": "",
-          "date": ""
+          "date": "01/16/2018"
         },
         {
-          "conference": "Open Source 101",
-          "location": "Raleigh, NC",
-          "slides": "02/17/2018",
-          "date": ""
+          "conference": "Open Source 101 - VueJS",
+          "location": "Raleigh, NC (NCSU)",
+          "slides": "",
+          "date": "02/17/2018"
         },
         {
-          "conference": "JazzCon",
+          "conference": "JazzCon - Component Architecture",
           "location": "New Orleans, LO",
           "slides": "",
           "date": "03/22/2018"
         },
         {
-          "conference": "Open Source 101",
+          "conference": "Open Source 101 - VueJS",
           "location": "Columbia, SC",
           "slides": "",
           "date": "04/17/2018"

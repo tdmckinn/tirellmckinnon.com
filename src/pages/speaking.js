@@ -18,26 +18,28 @@ class Speaking extends Component {
             {' '}
             I enjoy speaking and sharing knowledge with developer communities.
             If you would like to have me speak or present at your event just
-            reach out to me at any of my social mediums.
+            reach out to me at any of my social mediums or email me here at{' '}
+            <a href="mailto:tdmckinn@gmail.com?subject=speaking">tdmckinn</a>.
           </p>
           <div className="my-talks-container">
             <div className="my-talks-information">
               <section className="comments">
-                {engagements.map(({ talks }) => (
+                {engagements.reverse().map(({ talks }) => (
                   <div>
-                    {talks.map(({ conference, date, slides, location }) => (
-                      <article className="comment">
-                        <div className="comment-body">
-                          <div className="text">
-                            <p>{conference}</p>
+                    {talks
+                      .map(({ conference, date, location }) => (
+                        <article className="comment">
+                          <div className="comment-body">
+                            <div className="text">
+                              <p>{conference}</p>
+                            </div>
+                            <p className="attribution">
+                              Date: {date} | Location: {location}
+                            </p>
                           </div>
-                          <p className="attribution">
-                            Date: {date} | <a href={slides}>Slides</a> |
-                            Location: {location}
-                          </p>
-                        </div>
-                      </article>
-                    ))}
+                        </article>
+                      ))
+                      .reverse()}
                   </div>
                 ))}
               </section>​
