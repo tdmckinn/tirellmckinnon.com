@@ -37,14 +37,14 @@ During the kickoff of the previous command in your terminal, powershell, or wind
 
 ### Second Step Starting the Project
 
-Once your finished answering the series of questions and the project is generated, the following commands will get your dependencies started and the app running. This will prove the project works as is.
+Once your finished answering the series of questions and the project is generated, the following commands take you to your project directory and get the app running. This will prove the project works as is.
 
 ```
  cd vue-typescript-webapp
  npm run dev
 ```
 
-At this point you have a Vue Hello World application with a fairly robust build setup using webpack / babel. In my opinion, adding the typescript dependencies before you remove all the babel dependencies has resulted in a quicker setup for me. **Note**: most likely you don't need both babel and typescript typescript like babel can compile down to ES5 or target ES6. This is completely up to you and your needs for your project.
+At this point you have a Vue Hello World application with a fairly robust build setup using webpack / babel. In my opinion, adding the typescript dependencies before you remove all the babel dependencies has resulted in a quicker setup for me. **Note**: most likely you don't need both babel and typescript. Typescript like babel can compile down to ES5 or target ES6. Removing babel is completely up to you and your needs for your project.
 
 Before continuing to the next step you can go ahead and stop the current application from running in the terminal `Clt + C`.
 
@@ -109,7 +109,9 @@ For resolving an additional file extension you will also need to update the reso
 
 ```javascript
 resolve: {
-   extensions: ['.js', '.vue', '.json'] -> ['.js', '.vue', '.json', '.ts']
+   extensions: ['.js', '.vue', '.json']
+    ->
+      ['.js', '.vue', '.json', '.ts']
 }
 ```
 
@@ -171,7 +173,7 @@ error  in ./src/main.ts
 
 ## Targeting typescript in a Single File Component (SFC)
 
-I really enjoy using the SFC way of building components Vue happens to be really flexible in the way that you can build them, its really all your preference. Here we will target typescript in our .vue files looking at the example below. I'm specifically using HelloWorld.vue
+I really enjoy using the SFC way of building components. Vue happens to be really flexible in the way that you can build them, its all about preference. Here we will target typescript in our .vue files looking at the example below. I'm specifically using HelloWorld.vue
 Adding a `lang` target with the value of "ts" to the `script` tag allows us to start using typescript as if it were its own .ts file. You can play around with typescript features now directly in this file [Typescript Docs](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
 ```javascript
