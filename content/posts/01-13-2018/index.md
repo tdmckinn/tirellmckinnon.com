@@ -32,7 +32,8 @@ One of the wonderful things about open source is that you can always check the l
 `vue init webpack vue-typescript-webapp`
 
 During the kickoff of the previous command in your terminal, powershell, or windows-ubuntu shell you should see something like the following below, and there you will then enter your information.
-![logo](https://res.cloudinary.com/drjn3dk05/image/upload/v1514939273/Screen_Shot_2018-01-02_at_7.18.27_PM_mxhwdl.png)
+
+![logo](https://res.cloudinary.com/drjn3dk05/image/upload/c_scale,w_888/v1514939273/Screen_Shot_2018-01-02_at_7.18.27_PM_mxhwdl.png)
 
 ### Second Step Starting the Project
 
