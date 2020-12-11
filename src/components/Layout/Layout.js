@@ -4,9 +4,7 @@ import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
 
 const Layout = ({ children, title, description}) => {
-  const { author, url } = useSiteMetadata();
-  const metaImage = author.photo;
-  const metaImageUrl = url + metaImage;
+  const metaImageUrl = 'https://res.cloudinary.com/drjn3dk05/image/upload/v1607715832/tirelllogo_t8irhp.jpg';
 
   return (
     <div className={styles.layout}>
