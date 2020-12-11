@@ -12,8 +12,8 @@
     "lint:scss": "stylelint \"src/**/*.scss\"",
     "lint": "concurrently \"yarn run lint:js\" \"yarn run lint:scss\""
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "repository": "https://github.com/tdmckinn/tirellmckinnon.com",
+  "author": "Tirell Mckinnon <tdmckinn@gmail.com>",
   "license": "MIT",
   "keywords": [
     "gatsby",
