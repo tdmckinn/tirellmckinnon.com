@@ -7,8 +7,7 @@ module.exports = {
   subtitle: 'A blog for thinkers, doers, and those of us learning',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 10,
   useKatex: false,
   menu: [
     {
@@ -36,7 +35,7 @@ module.exports = {
       codepen: '',
       youtube: '',
       soundcloud: '',
-      medium: '',
+      medium: '@TirellMckinnon',
     },
   },
 };
