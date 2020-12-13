@@ -76,7 +76,7 @@ Github: [https://github.com/tdmckinn](https://github.com/tdmckinn)
 
 ## 📚 Education
 
-- **Bachelor's Degree in Computer Science - June 2020**
+- **Bachelor's Degree in Computer Science - June 2010**
 
 ---
 

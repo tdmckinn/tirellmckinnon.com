@@ -14,6 +14,10 @@ module.exports = {
       label: 'Blog Posts',
       path: '/',
     },
+    {
+      label: 'CV',
+      path: '/pages/cv',
+    },
   ],
   author: {
     name: 'Tirell Mckinnon',
