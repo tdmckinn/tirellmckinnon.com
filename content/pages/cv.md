@@ -82,7 +82,8 @@ Github: [https://github.com/tdmckinn](https://github.com/tdmckinn)
 
 ## ⚔️ Military Experience
 
-- **US Army Signal Officer National Guard – S6 Captain (0-3) -  June 2010 – June 2018**
+- **US Army Signal Officer National Guard – S6 Captain (0-3)**
+(June 2010 – June 2018)
     - I lead and managed 14 Soldiers supporting a Field Artillery and Aviation Battalion. I also handled the planning and execution of analog and digital military networks. I served as the primary communications expert within my unit.
     - I managed a team of Soldiers for 7+ years conducting individual expectation/goal setting, monthly check-ins, and yearly reviews.
     - I supported Joint Operation Mission’s in Romania and Wyoming during field exercise training; providing technical planning and expertise.
