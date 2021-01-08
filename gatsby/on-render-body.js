@@ -17,14 +17,6 @@ const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
       }),
     ])
   }
-
-  setPostBodyComponents([
-    <script
-      data-goatcounter="https://goatcounter-751h.onrender.com/count"
-      async
-      src="https://goatcounter-751h.onrender.com/count.js"
-    />,
-  ]);
 };
 
 module.exports = onRenderBody;
