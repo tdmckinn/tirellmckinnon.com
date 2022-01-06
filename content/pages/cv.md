@@ -33,9 +33,13 @@ Github: [https://github.com/tdmckinn](https://github.com/tdmckinn)
 
 ### ↘️ Jobs
 
+**Invision / Lead Front-End Engineer**
+(January 2011 – present)
+
+
 **Bleacher Report: Engineering Lead / Senior Front-End Engineer**
 
-(January 2019 – Present)
+(January 2019 – 2021)
 
 - Engineering Lead of a cross-platform initiative to bring PPV to iOS, Android, and Web. I collaborated with numerous stakeholders Developers, Product/Design, Directors, Business Ops, and Service Owners in order to plan milestone work. This work included In-App Purchases and Stripe integration bringing commerce to the overall business as a new revenue stream.
 - Front-end application development on [bleacherreport.com](http://bleacherreport.com/) with NodeJS, Redux, CS, and JavaScript. I also maintained internal dev tooling; I’ve built internal apps and I currently support an existing CMS admin application with a NodeJS server layer for API integrations and server-side rendering.
