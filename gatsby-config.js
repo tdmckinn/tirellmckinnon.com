@@ -60,7 +60,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map(edge => ({
+              allMarkdownRemark.edges.map((edge) => ({
                 ...edge.node.frontmatter,
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
@@ -131,13 +131,13 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify',
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
-      },
-    },
+    // 'gatsby-plugin-netlify',
+    // {
+    //   resolve: 'gatsby-plugin-netlify-cms',
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/index.js`,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
@@ -172,7 +172,7 @@ module.exports = {
         `,
         output: '/sitemap.xml',
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => ({
+          allSitePage.edges.map((edge) => ({
             url: site.siteMetadata.siteUrl + edge.node.path,
             changefreq: 'daily',
             priority: 0.7,
@@ -198,9 +198,6 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         postCssPlugins: [...postCssPlugins],
-        cssLoaderOptions: {
-          camelCase: false,
-        },
       },
     },
     {

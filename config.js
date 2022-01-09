@@ -22,7 +22,7 @@ module.exports = {
   author: {
     name: 'Tirell Mckinnon',
     photo: '/me.jpg',
-    bio: `I'm a Leader & Software Engineer, some interest of mine are tech, leadership, investing, and philosophy.`,
+    bio: `I'm a Leader & Software Engineer - some of my interests are tech, startups, leadership, investing, and philosophy.`,
     contacts: {
       email: 'mailto:tdmckinn@gmail.com',
       facebook: 'tirellmckinnon',
