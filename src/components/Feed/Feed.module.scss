@@ -1,73 +1,66 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
-.feed {
-  &__item {
-    @include margin-bottom(1.25);
+.feedItem {
+  @include margin-bottom(1.25);
 
-    &:last-child {
-      @include margin-bottom(0.5);
-    }
+  &:last-child {
+    @include margin-bottom(0.5);
+  }
+}
+.feedItemDescription {
+  font-size: $typographic-base-font-size;
+  @include line-height(1);
+  @include margin-bottom(0.75);
+}
 
-    &-title {
-      font-size: $typographic-base-font-size * 1.6875;
-      @include line-height(1.5);
-      @include margin-top(0);
-      @include margin-bottom(0.5);
+.feedItemMetaTime {
+  font-size: $typographic-small-font-size;
+  color: $color-base;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
-      &-link {
-        color: $color-base;
+.feedItemMetaDivider {
+  margin: 0 5px;
+}
 
-        &:hover,
-        &:focus {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
-        }
-      }
-    }
+.feedItemMetaCategoryLink {
+  font-size: $typographic-small-font-size;
+  color: $color-secondary;
+  font-weight: 600;
+  text-transform: uppercase;
 
-    &-description {
-      font-size: $typographic-base-font-size;
-      @include line-height(1);
-      @include margin-bottom(0.75);
-    }
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}
 
-    &-meta {
-      &-time {
-        font-size: $typographic-small-font-size;
-        color: $color-base;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
+.feedItemReadmore {
+  font-size: $typographic-base-font-size;
+  color: $color-primary;
 
-      &-divider {
-        margin: 0 5px;
-      }
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+  }
+}
 
-      &-category {
-        &-link {
-          font-size: $typographic-small-font-size;
-          color: $color-secondary;
-          font-weight: 600;
-          text-transform: uppercase;
+.feedItemTitle {
+  font-size: $typographic-base-font-size * 1.6875;
+  @include line-height(1.5);
+  @include margin-top(0);
+  @include margin-bottom(0.5);
+}
 
-          &:hover,
-          &:focus {
-            color: $color-primary;
-          }
-        }
-      }
-    }
+.feedItemTitleLink {
+  color: $color-base;
 
-    &-readmore {
-      font-size: $typographic-base-font-size;
-      color: $color-primary;
-
-      &:hover,
-      &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
-      }
-    }
+  &:hover,
+  &:focus {
+    color: $color-base;
+    border-bottom: 1px solid $color-base;
   }
 }

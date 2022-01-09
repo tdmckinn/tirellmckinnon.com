@@ -1,13 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
+import {layout} from './Layout.module.scss';
 
 const Layout = ({ children, title, description}) => {
   const metaImageUrl = 'https://res.cloudinary.com/drjn3dk05/image/upload/v1607717387/tirellmckinnon_letters_e6bca7.jpg?id=1';
 
   return (
-    <div className={styles.layout}>
+    <div className={layout}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>

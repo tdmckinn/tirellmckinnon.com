@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from './Feed.module.scss';
+import * as styles from './Feed.module.scss';
 
 const Feed = ({ edges }) => (
-  <div className={styles['feed']}>
-    {edges.map(edge => (
-      <div className={styles['feed__item']} key={edge.node.fields.slug}>
-        <div className={styles['feed__item-meta']}>
+  <div className="feed">
+    {edges.map((edge) => (
+      <div className={styles.feedItem} key={edge.node.fields.slug}>
+        <div className="feed__meta">
           <time
-            className={styles['feed__item-meta-time']}
+            className={styles.feedItemMetaTime}
             dateTime={new Date(edge.node.frontmatter.date).toLocaleDateString(
               'en-US',
               {
@@ -23,29 +23,26 @@ const Feed = ({ edges }) => (
               month: 'long',
             })}
           </time>
-          <span className={styles['feed__item-meta-divider']} />
-          <span className={styles['feed__item-meta-category']}>
+          <span className={styles.feedItemMetaDivider} />
+          <span>
             <Link
               to={edge.node.fields.categorySlug}
-              className={styles['feed__item-meta-category-link']}
+              className={styles.feedItemMetaCategoryLink}
             >
               {edge.node.frontmatter.category}
             </Link>
           </span>
         </div>
-        <h2 className={styles['feed__item-title']}>
-          <Link
-            className={styles['feed__item-title-link']}
-            to={edge.node.fields.slug}
-          >
+        <h2 className={styles.feedItemTitle}>
+          <Link className={styles.feedItemTitleLink} to={edge.node.fields.slug}>
             {edge.node.frontmatter.title}
           </Link>
         </h2>
-        <p className={styles['feed__item-description']}>
+        <p className={styles.feedItemDescription}>
           {edge.node.frontmatter.description}
         </p>
         <Link
-          className={styles['feed__item-readmore']}
+          className={styles.feedItemReadmore}
           to={edge.node.fields.slug}
         >
           Read

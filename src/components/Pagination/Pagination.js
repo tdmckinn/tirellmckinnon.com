@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'gatsby';
 import { PAGINATION } from '../../constants';
-import styles from './Pagination.module.scss';
+import * as styles from './Pagination.module.scss';
 
 const cx = classNames.bind(styles);
 
@@ -13,18 +13,18 @@ const Pagination = ({
   hasPrevPage,
 }) => {
   const prevClassName = cx({
-    'pagination__prev-link': true,
-    'pagination__prev-link--disable': !hasPrevPage,
+    [styles.paginationPrevLink]: true,
+    [styles.paginationPrevLinkDisable ]: !hasPrevPage,
   });
 
   const nextClassName = cx({
-    'pagination__next-link': true,
-    'pagination__next-link--disable': !hasNextPage,
+    [styles.paginationNextLink]: true,
+    [styles.paginationNextLinkDisable]: !hasNextPage,
   });
 
   return (
-    <div className={styles['pagination']}>
-      <div className={styles['pagination__prev']}>
+    <div className={styles.pagination}>
+      <div className={styles.paginationPrev}>
         <Link
           rel="prev"
           to={hasPrevPage ? prevPagePath : '/'}
@@ -33,7 +33,7 @@ const Pagination = ({
           {PAGINATION.PREV_PAGE}
         </Link>
       </div>
-      <div className={styles['pagination__next']}>
+      <div className={styles.paginationNext}>
         <Link
           rel="next"
           to={hasNextPage ? nextPagePath : '/'}

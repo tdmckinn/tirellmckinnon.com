@@ -5,7 +5,7 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
-import styles from './Post.module.scss';
+import * as styles from './Post.module.scss';
 
 const Post = ({ post }) => {
   const { html } = post;
@@ -13,22 +13,22 @@ const Post = ({ post }) => {
   const { tags, title, date } = post.frontmatter;
 
   return (
-    <div className={styles['post']}>
-      <Link className={styles['post__home-button']} to="/">
+    <div className="post">
+      <Link className={styles.postHomeButton} to="/">
         All Articles
       </Link>
 
-      <div className={styles['post__content']}>
+      <div>
         <Content body={html} title={title} />
       </div>
 
-      <div className={styles['post__footer']}>
+      <div className={styles.postFooter}>
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author />
       </div>
 
-      <div className={styles['post__comments']}>
+      <div className={styles.postComments}>
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />
       </div>
     </div>

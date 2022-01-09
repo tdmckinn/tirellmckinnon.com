@@ -8,13 +8,11 @@
   @include line-height(1);
   @include margin-top(1);
   @include margin-bottom(2);
+}
 
-  &__bio {
-    &-twitter {
-      display: block;
-      text-decoration: underline;
-    }
-  }
+.authorBioTwitter {
+  display: block;
+  text-decoration: underline;
 }
 
 @include breakpoint-sm {

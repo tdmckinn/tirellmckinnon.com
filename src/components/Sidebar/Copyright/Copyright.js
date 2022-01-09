@@ -1,10 +1,10 @@
 
 import React from 'react';
-import styles from './Copyright.module.scss';
+import {copyright as copyrightStyles} from './Copyright.module.scss';
 
 
 const Copyright = ({ copyright }) => (
-  <div className={styles['copyright']}>
+  <div className={copyrightStyles}>
     {copyright}
   </div>
 );

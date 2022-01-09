@@ -4,46 +4,46 @@
 .pagination {
   @include margin-top(2);
   display: flex;
+}
 
-  &__prev {
-    width: 50%;
-    text-align: left;
+.paginationPrev {
+  width: 50%;
+  text-align: left;
+}
 
-    &-link {
-      color: $color-secondary;
-      font-size: 18px;
-      font-weight: bold;
+.paginationPrevLink {
+  color: $color-secondary;
+  font-size: 18px;
+  font-weight: bold;
 
-      &:hover,
-      &:focus {
-        color: $color-primary;
-      }
-
-      &--disable {
-        pointer-events: none;
-        color: lighten($color-gray, 20%);
-      }
-    }
+  &:hover,
+  &:focus {
+    color: $color-primary;
   }
+}
 
-  &__next {
-    width: 50%;
-    text-align: right;
+.paginationPrevLinkDisable {
+  pointer-events: none;
+  color: lighten($color-gray, 20%);
+}
 
-    &-link {
-      color: $color-secondary;
-      font-size: 18px;
-      font-weight: bold;
+.paginationNext {
+  width: 50%;
+  text-align: right;
+}
 
-      &:hover,
-      &:focus {
-        color: $color-primary;
-      }
+.paginationNextLink {
+  color: $color-secondary;
+  font-size: 18px;
+  font-weight: bold;
 
-      &--disable {
-        pointer-events: none;
-        color: lighten($color-gray, 20%);
-      }
-    }
+  &:hover,
+  &:focus {
+    color: $color-primary;
   }
+}
+
+.paginationNextLinkDisable {
+  pointer-events: none;
+  color: lighten($color-gray, 20%);
 }

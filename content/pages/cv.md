@@ -3,7 +3,7 @@ title: "CV"
 template: "page"
 ---
 
-> I'm a Senior Software Engineer with 10+ years developing web applications and leading teams. I'm passionate about learning, mentoring, and I enjoy challenges. I’m a believer in building and delivering tangible products to users. I have a passion for building UI’s internal or external. My focus area and expertise are in the front-end development space, web performance, API integrations, and providing technical guidance on overall application architectures.
+> I'm a Lead Software Engineer with 10+ years developing web applications and leading teams. I'm passionate about learning, mentoring, and I enjoy challenges. I’m a believer in building and delivering tangible products to users. I have a passion for building UI’s internal or external. My focus area and expertise are in the front-end development space, web performance, API integrations, and providing technical guidance on overall application architectures.
 
 ### 📧 Contact me
 
@@ -34,7 +34,8 @@ Github: [https://github.com/tdmckinn](https://github.com/tdmckinn)
 ### ↘️ Jobs
 
 **Invision / Lead Front-End Engineer**
-(January 2011 – present)
+
+(January 2021 – present)
 
 
 **Bleacher Report: Engineering Lead / Senior Front-End Engineer**

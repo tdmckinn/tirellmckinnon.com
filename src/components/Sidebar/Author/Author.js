@@ -1,13 +1,13 @@
 import React from 'react';
 import { withPrefix, Link } from 'gatsby';
-import styles from './Author.module.scss';
+import * as styles from './Author.module.scss';
 
 const Author = ({ author, isIndex }) => (
-  <div className={styles['author']}>
+  <div className="author">
     <Link to="/">
       <img
         src={withPrefix(author.photo)}
-        className={styles['author__photo']}
+        className={styles.authorPhoto}
         width="75"
         height="75"
         alt={author.name}
@@ -15,19 +15,19 @@ const Author = ({ author, isIndex }) => (
     </Link>
 
     {isIndex === true ? (
-      <h1 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">
+      <h1 className={styles.authorTitle}>
+        <Link className={styles.authorTitleLink} to="/">
           {author.name}
         </Link>
       </h1>
     ) : (
-      <h2 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">
+      <h2 className={styles.authorTitle}>
+        <Link className={styles.authorTitleLink} to="/">
           {author.name}
         </Link>
       </h2>
     )}
-    <p className={styles['author__subtitle']}>{author.bio}</p>
+    <p className={styles.authorSubtitle}>{author.bio}</p>
   </div>
 );
 
