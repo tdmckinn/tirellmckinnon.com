@@ -1,6 +1,25 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
+:global {
+  body {
+    background: $color-white;
+  }
+}
+
+:global(.dark) {
+  body {
+    background: #141414;
+  }
+}
+
 .layout {
   lost-center: $layout-width;
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
 }

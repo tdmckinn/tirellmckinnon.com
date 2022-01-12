@@ -1,0 +1,48 @@
+@import '../../assets/scss/variables';
+
+.newsletter {
+  max-width: $layout-post-width;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-top: 1px solid $color-black;
+}
+
+.newsletterBg {
+  @apply max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8;
+}
+
+.newsletterHeader {
+  @apply inline text-3xl font-extrabold tracking-tight text-primary sm:block sm:text-4xl;
+}
+
+.signup {
+  @apply mt-3 max-w-3xl text-lg leading-6 text-secondary;
+}
+
+.form {
+  @apply mt-8 sm:flex;
+}
+
+.emailInput {
+  --tw-border-opacity: 1;
+  border-color: rgba(209,213,219,var(--tw-border-opacity));
+  @apply w-full px-5 py-3 placeholder-gray-500 focus:ring-secondary focus:border-secondary sm:max-w-xs border-gray-300 rounded-md;
+}
+
+.btnContainer {
+  @apply mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0;
+}
+
+.btn {
+  @apply w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary;
+}
+
+.emailLabel {
+  @apply sr-only;
+}
+
+:global(.dark) {
+  .newsletter {
+    border-top: 1px solid white;
+  }
+}

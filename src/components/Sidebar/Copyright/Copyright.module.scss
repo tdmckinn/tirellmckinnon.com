@@ -1,7 +1,13 @@
 @import '../../../assets/scss/variables';
 @import '../../../assets/scss/mixins';
 
+:global(.dark) {
+  .copyright {
+    color: lighten($color-gray, 18%);
+  }
+}
+
 .copyright {
-  color: lighten($color-gray, 18%);
+  color: $color-black;
   font-size: $typographic-small-font-size;
 }

@@ -5,6 +5,8 @@ const pxtorem = require('postcss-pxtorem');
 const autoprefixer = require('autoprefixer');
 
 module.exports = [
+  require('postcss-import'),
+  require('tailwindcss'),
   lost(),
   pxtorem({
     rootValue: 16,

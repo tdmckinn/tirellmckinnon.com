@@ -28,7 +28,7 @@
   line-height: $button-height;
   border-radius: 50%;
   text-align: center;
-  border: 1px solid $color-gray-bg;
+  border: 1px solid $color-black;
 }
 
 .contactsListItemLink {
@@ -41,4 +41,9 @@
     color: $color-primary;
   }
 }
- 
+
+:global(.dark) {
+  .contactsListItem {
+    border: 1px solid $color-gray-bg;
+  }
+}

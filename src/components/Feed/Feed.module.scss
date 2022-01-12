@@ -9,14 +9,15 @@
   }
 }
 .feedItemDescription {
+  color: $color-black;
   font-size: $typographic-base-font-size;
   @include line-height(1);
   @include margin-bottom(0.75);
 }
 
 .feedItemMetaTime {
+  color: $color-black;
   font-size: $typographic-small-font-size;
-  color: $color-base;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -56,11 +57,17 @@
 }
 
 .feedItemTitleLink {
-  color: $color-base;
+  color: $color-black;
 
   &:hover,
   &:focus {
     color: $color-base;
     border-bottom: 1px solid $color-base;
+  }
+}
+
+:global(.dark) {
+  .feedItemMetaTime, .feedItemTitleLink, .feedItemDescription {
+    color: $color-base;
   }
 }

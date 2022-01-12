@@ -10,9 +10,9 @@ const Page = ({ title, children }) => {
 
   return (
     <div ref={pageRef} className={pageStyles.page}>
-      <div className={pageStyles.padgeInner}>
-        {title && <h1 className={pageStyles.padgeTitle}>{title}</h1>}
-        <div className={pageStyles.padgeBody}>{children}</div>
+      <div className={pageStyles.pageInner}>
+        {title && <h1 className={pageStyles.pageTitle}>{title}</h1>}
+        <div className={pageStyles.pageBody}>{children}</div>
       </div>
     </div>
   );

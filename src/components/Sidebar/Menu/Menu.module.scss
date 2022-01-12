@@ -18,18 +18,30 @@
 
 .menuListItemLink {
   font-size: $typographic-base-font-size;
-  color: $typographic-base-font-color;
+  color: $typographic-link-p-font-color;
   font-weight: normal;
   border: 0;
 
   &:hover,
   &:focus {
-    color: $color-primary;
-    border-bottom: 1px solid $color-primary;
+    color: $color-secondary;
+    border-bottom: 1px solid $color-secondary;
   }
 }
 
 .menuListItemLinkActive {
   color: $color-base;
   border-bottom: 1px solid $color-base;
+}
+
+:global(.dark) {
+  .menuListItemLink {
+    color: $typographic-base-font-color;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      border-bottom: 1px solid $color-primary;
+    }
+  }
 }

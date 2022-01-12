@@ -2,6 +2,7 @@
 @import '../../assets/scss/mixins';
 
 .postFooter {
+  color: $color-black;
   max-width: $layout-post-width;
   margin: 0 auto;
   padding: 0 15px;
@@ -20,8 +21,8 @@
   padding: 0 24px;
   line-height: $button-height;
   text-align: center;
-  color: $color-base;
-  border: 1px solid $color-gray-border;
+  color: $color-black;
+  border: 1px solid $color-primary;
   border-radius: $button-border-radius;
   font-size: $typographic-base-font-size;
   font-weight: normal;
@@ -49,5 +50,21 @@
     margin: 0;
     top: 30px;
     left: 30px;
+  }
+}
+
+:global(.dark) {
+  .postHomeButton {
+    color: $color-base;
+    border: 1px solid $color-gray-border;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+  }
+
+  .postFooter {
+    color: $color-base;
   }
 }

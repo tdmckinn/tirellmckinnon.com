@@ -2,12 +2,11 @@
  * Generic
  */
 html {
-  font-size: $typographic-root-font-size;
+  font-size: 1rem;
 }
 
 body {
   margin: 0 0 0 calc(100vw - 100%);
-  background-color: #141414;
   font-family: $typographic-font-family;
   color: $typographic-base-font-color;
   line-height: $typographic-base-line-height;

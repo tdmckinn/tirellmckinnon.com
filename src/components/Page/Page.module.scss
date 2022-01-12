@@ -2,14 +2,29 @@
 @import '../../assets/scss/mixins';
 
 .page {
+  color: $color-black;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $color-black;
+  }
   @include margin-bottom(2);
+}
+
+.toggle {
+  display: flex;
+  justify-content: end;
 }
 
 .pageInner {
   padding: 25px 20px;
 }
 
-.padgeTitle {
+.pageTitle {
+  color: $color-black;
   font-size: $typographic-base-font-size * 2.5;
   font-weight: 600;
   @include line-height(2);
@@ -17,7 +32,7 @@
   @include margin-bottom(1.45);
 }
 
-.padgeBody {
+.pageBody {
   font-size: $typographic-base-font-size;
   @include line-height(1);
   @include margin(0, 0, 1);
@@ -28,7 +43,7 @@
     lost-column: 7/12;
   }
 
-  .padgeInner {
+  .pageInner {
     padding: 30px 20px;
   }
 }
@@ -37,7 +52,24 @@
   .page {
     lost-column: 2/3;
   }
-  .padgeInner {
+  .pageInner {
     padding: 40px 35px;
+  }
+}
+
+:global(.dark) {
+  .page,
+  .pageTitle {
+    color: $typographic-base-font-color;
+  }
+
+  .page {
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: $typographic-base-font-color;
+    }
   }
 }

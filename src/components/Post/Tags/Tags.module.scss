@@ -21,13 +21,25 @@
   height: $button-height;
   padding: 0 24px;
   line-height: $button-height;
-  border: 1px solid $color-gray-border;
+  border: 1px solid $color-black;
   text-decoration: none;
   border-radius: $button-border-radius;
-  color: $color-base;
+  color: $color-black;
 
   &:hover,
   &:focus {
     color: $color-primary;
+  }
+}
+
+:global(.dark) {
+  .tagsListItemLink {
+    color: $color-base;
+    border: 1px solid $color-gray-border;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
   }
 }

@@ -3,8 +3,8 @@
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: #5d93ff;
+  fill: #5d93ff;
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -16,4 +16,11 @@
   margin-left: 0.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:global(.dark) {
+  .icon {
+    stroke: currentColor;
+    fill: currentColor;
+  }
 }

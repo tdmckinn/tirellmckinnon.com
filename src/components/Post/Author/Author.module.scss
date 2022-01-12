@@ -1,8 +1,14 @@
 @import '../../../assets/scss/variables';
 @import '../../../assets/scss/mixins';
 
+.dark {
+  p {
+    @apply text-black;
+  }
+}
+
 .author {
-  border-top: 1px solid $color-gray-border;
+  border-top: 1px solid $color-black;
   max-width: $layout-post-width;
   padding-top: 20px;
   @include line-height(1);
@@ -19,5 +25,12 @@
   .author {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+:global(.dark) {
+  .author {
+    border-top: 1px solid $color-gray-border;
+
   }
 }

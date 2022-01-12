@@ -1,6 +1,22 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
+:global(.dark) {
+  @include breakpoint-sm {
+    .sidebarInner {
+      &:after {
+       background: $color-gray-border;
+       background: linear-gradient(
+         to bottom,
+         $color-gray-border 0%,
+         $color-gray-border 48%,
+         $color-white 100%
+       );
+     }
+   }
+  }
+}
+
 .sidebar {
   width: 100%;
 }
@@ -17,12 +33,12 @@
   .sidebarInner {
     padding: 30px 20px 0;
     &:after {
-      background: $color-gray-border;
+      background: $color-gray;
       background: linear-gradient(
         to bottom,
-        $color-gray-border 0%,
-        $color-gray-border 48%,
-        $color-white 100%
+        $color-base 0%,
+        $color-base 48%,
+        $color-base 100%
       );
       position: absolute;
       content: '';

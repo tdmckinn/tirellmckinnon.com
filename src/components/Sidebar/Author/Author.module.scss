@@ -16,7 +16,7 @@
 }
 
 .authorTitleLink {
-  color: $color-base;
+  color: $color-black;
 
   &:hover,
   &:focus {
@@ -25,7 +25,13 @@
 }
 
 .authorSubtitle {
-  color: $color-gray;
+  @apply text-black;
   @include line-height(1);
   @include margin-bottom(1);
+}
+
+:global(.dark) {
+  .authorTitle, .authorTitleLink, .authorSubtitle {
+    color: $color-white;
+  }
 }
