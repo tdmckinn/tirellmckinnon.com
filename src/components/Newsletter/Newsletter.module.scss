@@ -1,17 +1,19 @@
 @import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
 
 .newsletter {
   max-width: $layout-post-width;
   margin: 0 auto;
   padding: 0 15px;
-  border-top: 1px solid $color-black;
 }
 
 .newsletterBg {
-  @apply max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8;
+  border-top: 1px solid $color-black;
+  @apply max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:py-16 lg:px-8;
 }
 
 .newsletterHeader {
+  margin-top: 5px;
   @apply inline text-3xl font-extrabold tracking-tight text-primary sm:block sm:text-4xl;
 }
 
@@ -20,13 +22,14 @@
 }
 
 .form {
-  @apply mt-8 sm:flex;
+  @apply mt-8 sm:flex w-full;
 }
 
 .emailInput {
   --tw-border-opacity: 1;
+  box-sizing: border-box;
   border-color: rgba(209,213,219,var(--tw-border-opacity));
-  @apply w-full px-5 py-3 placeholder-gray-500 focus:ring-secondary focus:border-secondary sm:max-w-xs border-gray-300 rounded-md;
+  @apply px-5 py-3 placeholder-gray-500 focus:ring-secondary focus:border-secondary w-full border-gray-300 rounded-md;
 }
 
 .btnContainer {
@@ -41,8 +44,21 @@
   @apply sr-only;
 }
 
-:global(.dark) {
+@include breakpoint-md {
   .newsletter {
-    border-top: 1px solid white;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint-sm {
+  .newsletter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+:global(.dark) {
+  .newsletterBg {
+    border-top: 1px solid $color-white;
   }
 }
