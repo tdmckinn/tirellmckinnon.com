@@ -9,7 +9,7 @@ export default function NewsLetter() {
          Subscribe to my newsletter
         </h2>
         <p className={styles.signup}>Subscribe to get my latest content by email.</p>
-        <form className={styles.form} action="/pages/subscribe-success" data-netlify="true">
+        <form className={styles.form} name="newsletter" action="/pages/subscribe-success" data-netlify="true">
           <label htmlFor="email-address" className={styles.emailLabel}>
             Email address
           </label>
