@@ -1,17 +1,7 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 const nodemailer = require('nodemailer');
 
-addEventListener('fetch', (event) => {
-  event.respondWith(handleRequest(event.request));
-});
-/**
- * Respond with hello worker text
- * @param {Request} request
- */
-
-// const mailClient = createMailClient();
-
-exports.handleRequest = async (event, context) => {
+exports.handler = async (event, context) => {
   try {
     // const json = JSON.parse(event.body);
 
