@@ -6,10 +6,10 @@ export default function NewsLetter() {
     <div className={styles.newsletter}>
       <div className={styles.newsletterBg}>
         <h2 className={styles.newsletterHeader}>
-         Subscribe to the newsletter
+         Subscribe to my newsletter
         </h2>
         <p className={styles.signup}>Subscribe to get my latest content by email.</p>
-        <form className={styles.form} action="/.netlify/functions/mailer">
+        <form className={styles.form} netlify>
           <label htmlFor="email-address" className={styles.emailLabel}>
             Email address
           </label>

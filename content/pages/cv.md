@@ -79,7 +79,7 @@ Github: [https://github.com/tdmckinn](https://github.com/tdmckinn)
 
 ---
 
-## 📚 Education
+## 📚 Education - University of North Carolina at Charlotte
 
 - **Bachelor's Degree in Computer Science - June 2010**
 
