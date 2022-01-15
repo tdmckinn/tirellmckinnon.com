@@ -1,7 +1,7 @@
 ---
 title: The Gordian Knot - Decision Paralysis
 description: "Overcoming decision paralysis"
-date: "2022-1-05"
+date: "2022-01-05"
 template: "post"
 draft: false
 slug: "the-gordian-knot-decision-paralysis"
