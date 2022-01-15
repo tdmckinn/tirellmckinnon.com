@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": true,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "rootDir": ".",
+    "sourceMap": false,
+    "newLine": "LF",
+    "noEmitOnError": true
+  },
+  "exclude": []
+}
