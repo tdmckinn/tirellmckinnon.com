@@ -32,6 +32,7 @@
     "disqus"
   ],
   "dependencies": {
+    "@netlify/functions": "^0.10.0",
     "@sentry/gatsby": "^5.30.0",
     "@sentry/tracing": "^5.30.0",
     "bluebird": "^3.7.2",

@@ -1,7 +1,9 @@
+import { Handler } from '@netlify/functions';
+
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 const nodemailer = require('nodemailer');
 
-exports.handler = async (event, context) => {
+const handler: Handler = async (event, context) => {
   try {
     // const json = JSON.parse(event.body);
 
@@ -36,16 +38,18 @@ exports.handler = async (event, context) => {
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 
-    return new Response('Hello worker!', {
+    return {
       headers: { 'content-type': 'text/plain' },
       statusCode: 200,
       body: 'Message sent!',
-    });
+    };
   } catch (err) {
-    return new Response('Hello worker!', {
+    return {
       headers: { 'content-type': 'text/plain' },
       statusCode: 500,
       body: err.toString(),
-    });
+    };
   }
 };
+
+export { handler };
