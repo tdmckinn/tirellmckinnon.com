@@ -5,11 +5,19 @@ export default function NewsLetter() {
   return (
     <div className={styles.newsletter}>
       <div className={styles.newsletterBg}>
-        <h2 className={styles.newsletterHeader}>
-         Subscribe to my newsletter
-        </h2>
-        <p className={styles.signup}>Subscribe to get my latest content by email.</p>
-        <form className={styles.form} name="newsletter" action="/pages/subscribe-success" netlify>
+        <h2 className={styles.newsletterHeader}>Subscribe to my newsletter</h2>
+        <p className={styles.signup}>
+          Subscribe to get my latest content by email.
+        </p>
+        <form
+          className={styles.form}
+          name="newsletter"
+          action="/pages/subscribe-success"
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <input type="hidden" name="newsletter" value="newsletter" />
           <label htmlFor="email-address" className={styles.emailLabel}>
             Email address
           </label>
