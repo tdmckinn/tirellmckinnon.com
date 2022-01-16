@@ -9,7 +9,7 @@ const handler: Handler = async (event, _context) => {
   const body = JSON.parse(event.body).payload
 
   base('blogEmailListTable').create({
-    Email: body
+    Email: body.email
   }, function (err, record) {
     if (err) {
       console.error(err);

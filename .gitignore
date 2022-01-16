@@ -9,3 +9,5 @@ gatsby-starter-lumen.iml
 settings.json
 
 .vercel
+
+.netlify/functions-serve
