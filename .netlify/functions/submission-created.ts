@@ -1,10 +1,11 @@
-const Airtable = require('airtable');
+import Airtable from 'airtable';
+import { Handler } from '@netlify/functions';
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_AP_KEY }).base(
   process.env.AIRTABLE_BASE_ID_KNON
 );
 
-exports.handler = async function (event) {
+const handler: Handler = async (event, _context) => {
   try {
     const body = JSON.parse(event.body).payload;
 
@@ -25,11 +26,12 @@ exports.handler = async function (event) {
       statusCode: 200,
       body: JSON.stringify({ message: 'Email list updated!' }),
     };
-  } catch (err) {
-    console.error(err);
+  } catch (e) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Email list update failed!' }),
+    };
   }
-  return {
-    statusCode: 500,
-    body: JSON.stringify({ message: 'Email list update failed!' }),
-  };
 };
+
+export { handler };
