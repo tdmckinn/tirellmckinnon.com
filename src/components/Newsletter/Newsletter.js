@@ -17,7 +17,7 @@ export default function NewsLetter() {
           netlify-honeypot="bot-field"
           data-netlify="true"
         >
-          <input type="hidden" name="newsletter" value="newsletter" />
+          <input type="hidden" name="form-name" value="newsletter" />
           <label htmlFor="email-address" className={styles.emailLabel}>
             Email address
           </label>
