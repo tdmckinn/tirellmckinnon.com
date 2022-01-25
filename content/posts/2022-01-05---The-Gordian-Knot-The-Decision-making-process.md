@@ -5,8 +5,8 @@ date: "2022-01-05"
 template: "post"
 draft: false
 slug: "the-gordian-knot-decision-paralysis"
-category: "life"
-tags: [decision-making, leadership, history]
+category: "decision-making"
+tags: [decision-making, leadership, history, life]
 ---
 
 ![Knot Image](https://res.cloudinary.com/drjn3dk05/image/upload/c_scale,w_555/v1641426788/jonathan-borba-E30hzJRqB8Y-unsplash_kqltre.jpg)
@@ -53,4 +53,4 @@ Currently, I work on a team of software engineers as a lead developer in my day-
 
 Whether you are an individual or a team, have a process, so you don't fall into decision paralysis. By planning to the best of your ability with the facts and information that you have at the moment. Make a decision – and be okay with the results, expected or unexpected, and then be flexible enough to adjust.
 
-> "Not making a decision is the only wrong decision."
+> ***"Not making a decision is the only wrong decision."***
