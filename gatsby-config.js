@@ -16,6 +16,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [...postCssPlugins],
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static`,
@@ -131,13 +137,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    // 'gatsby-plugin-netlify',
-    // {
-    //   resolve: 'gatsby-plugin-netlify-cms',
-    //   options: {
-    //     modulePath: `${__dirname}/src/cms/index.js`,
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
@@ -195,12 +194,6 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        postCssPlugins: [...postCssPlugins],
-      },
-    },
-    {
       resolve: '@sentry/gatsby',
       options: {
         dsn: process.env.SENTRY_DSN,
@@ -208,5 +201,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-optimize-svgs',
+    'gatsby-plugin-netlify',
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/index.js`,
+      },
+    },
   ],
 };
